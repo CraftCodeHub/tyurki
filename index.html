@@ -1065,7 +1065,7 @@
 	// woman
 	function drawDynamicSelectWoman() {
 		var query = new google.visualization.Query(ssKey);
-		query.setQuery("SELECT E, Count(B) WHERE L='женский' GROUP BY E");
+		query.setQuery("SELECT D, Count(B) WHERE L='женский' GROUP BY D");
 		query.send(handleSelectResponseWoman);
 	}
 
@@ -1087,7 +1087,7 @@
 	function drawVisualizationWoman1(ansSetWoman) {
 		var query = new google.visualization.Query(ssKey);
 		// Apply query language.
-		query.setQuery("SELECT F, COUNT(E) WHERE (E='" + ansSetWoman + "' AND N='" + varKz + "') GROUP BY F");
+		query.setQuery("SELECT E, COUNT(D) WHERE (D='" + ansSetWoman + "' AND N='" + varKz + "') GROUP BY E");
 		// Send the query with a callback function.
 		query.send(handleQueryResponseWoman1);
 	}
@@ -1110,7 +1110,7 @@
 	function drawVisualizationWoman2(ansSetWoman) {
 		var query = new google.visualization.Query(ssKey);
 		// Apply query language.
-		query.setQuery("SELECT I, COUNT(E) WHERE (E='" + ansSetWoman + "' AND N='" + varKz + "') GROUP BY I");
+		query.setQuery("SELECT G, COUNT(D) WHERE (D='" + ansSetWoman + "' AND N='" + varKz + "') GROUP BY G");
 		// Send the query with a callback function.
 		query.send(handleQueryResponseWoman2);
 	}
@@ -1133,7 +1133,7 @@
 	function drawVisualizationWoman3(ansSetWoman) {
 		var query = new google.visualization.Query(ssKey);
 		// Apply query language.
-		query.setQuery("SELECT H, COUNT(E) WHERE (E='" + ansSetWoman + "' AND N='" + varKz + "') GROUP BY H");
+		query.setQuery("SELECT F, COUNT(D) WHERE (D='" + ansSetWoman + "' AND N='" + varKz + "') GROUP BY F");
 		// Send the query with a callback function.
 		query.send(handleQueryResponseWoman3);
 	}
