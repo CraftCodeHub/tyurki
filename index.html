@@ -31,7 +31,7 @@
 	// drawDynamicSelect() and handleSelectResponse() are used to draw the dynamic list of question ids
 	function drawDynamicSelect() {
 		var query = new google.visualization.Query(ssKey);
-		query.setQuery("SELECT D, Count(D) GROUP BY D");
+		query.setQuery("SELECT D, Count(B) GROUP BY D");
 		query.send(handleSelectResponse);
 	}
 
@@ -6708,8 +6708,6 @@
 							drawVisualization41(this.value); 
 							drawVisualization42(this.value); drawVisualization43(this.value);  
 							drawVisualization44(this.value); drawVisualization45(this.value);	
-							
-
 					      	">
 								<option value="">Выберите национальность</option>
 							</select>
