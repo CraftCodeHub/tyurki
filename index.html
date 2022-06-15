@@ -53,7 +53,7 @@
 	function drawVisualization(ansSet) {
 		var query = new google.visualization.Query(ssKey);
 		// Apply query language.
-		query.setQuery("SELECT F, Count(E) WHERE E = '" + ansSet + "' GROUP BY F ");
+		query.setQuery("SELECT E, Count(D) WHERE D = '" + ansSet + "' GROUP BY E ");
 		// Send the query with a callback function.
 		query.send(handleQueryResponse);
 	}
