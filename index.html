@@ -31,7 +31,7 @@
 	// drawDynamicSelect() and handleSelectResponse() are used to draw the dynamic list of question ids
 	function drawDynamicSelect() {
 		var query = new google.visualization.Query(ssKey);
-		query.setQuery("SELECT E, Count(B) GROUP BY E");
+		query.setQuery("SELECT D, Count(B) GROUP BY D");
 		query.send(handleSelectResponse);
 	}
 
@@ -1065,7 +1065,7 @@
 	// woman
 	function drawDynamicSelectWoman() {
 		var query = new google.visualization.Query(ssKey);
-		query.setQuery("SELECT E, Count(B) WHERE N='женский' GROUP BY E");
+		query.setQuery("SELECT E, Count(B) WHERE L='женский' GROUP BY E");
 		query.send(handleSelectResponseWoman);
 	}
 
